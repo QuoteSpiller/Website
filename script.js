@@ -96,7 +96,7 @@ $(document).ready(function() {
 |----------------------------------------------------------|
 | Name: Alex [REDACTED]                                    |
 | Email: Encador@proton.me                                 |
-| GitHub: github.com/QuoteSpiller                          |
+| GitHub: github.com/Encador                               |
 ============================================================
 >
 > get user/skills
