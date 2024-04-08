@@ -132,8 +132,8 @@ $(document).ready(function() {
   var typingInterval = 1;
 
   // Start typing animation on page load
-  // typeText(textToType, 0, typingInterval);
-  $('#editor_input').text(textToType);
+  typeText(textToType, 0, typingInterval);
+  // $('#editor_input').text(textToType);
 });
 
 
