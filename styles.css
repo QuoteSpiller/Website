@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+body {
+  background: #111;
+  font: 2.5vw VT323, monospace;
+  line-height: 1;
+  overflow: hidden;
+}
+#editor_output {
+  display: block;
+}
+
+.retro {
+  display: block;
+  background: #000;
+  color: white;
+  width: 70vw;
+  height: 80vh;
+  margin: 2% auto;
+  padding: 5px;
+  box-sizing: border-box;
+  text-shadow: 0 0 1em rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  /*overflow: auto;*/
+  /*background: #333;*/
+  background: radial-gradient(ellipse at center, #333 0%, #0d0d0d 100%);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 30px -5px black inset;
+  border: 5px solid #111211;
+  filter: contrast(1.25) sepia(1) contrast(0.7) hue-rotate(60deg) saturate(2) contrast(1.2);
+}
+
+
+.retro:after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 5px 30px -5px black inset;
+  background-image: repeating-linear-gradient(180deg, rgba(200, 255, 200, 0.25) 0px, rgba(200, 255, 200, 0.25) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+  background-size: 3px 3px;
+}
+.selection {
+  animation: blink 1.5s infinite;
+  position: relative;
+  min-height: 0.9em;
+  outline: 2px dotted white;
+  box-shadow: 0 0 15px white;
+}
+@keyframes blink {
+  0%, 50% {
+    background: transparent;
+    color: white;
+    outline-color: white;
+    box-shadow: none;
+  }
+  51%, 100% {
+
+    background: white;
+    color: #333;
+    outline-color: #333;
+    box-shadow: 0 0 15px white;
+  }
+}
+.off-canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font: inherit;
+  opacity: 0;
+}
+#editor_output {
+  white-space: pre-wrap;
+  pointer-events: none;
+}
