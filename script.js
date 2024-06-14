@@ -86,7 +86,7 @@ $(document).ready(function() {
 |                                                          |
 |  PASSWORD: ************                                  |
 |                                                          |
-|  ACCESS GRANTED. WELCOME, USER: BOB [REDACTED]           |
+|  ACCESS GRANTED. WELCOME, USER: ALEX [REDACTED]          |
 |                                                          |
 ============================================================
 >
